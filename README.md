@@ -1,4 +1,4 @@
-# docker_deep_learning
+# Docker Deep Learning
 Docker for Deep Learning
 
 ## Instructions to lauch docker
