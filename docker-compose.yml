@@ -1,0 +1,14 @@
+version: "2"
+services:
+  python:
+    build: .
+    container_name : deep_learning
+    ports :
+     - "9888:8888"
+    environment:
+     - PASSWD='sha1:030d13fe8056:7e11a5646398161a1d2f70500bb0ed3a11d96c55'
+    volumes:
+     - "../notebooks/:/srv/notebooks/"
+    #stdin_open: true
+    #tty: true
+
