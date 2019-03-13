@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker exec -it dockpy_alice bash
+sudo docker exec -it deep_learning bash
