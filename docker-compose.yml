@@ -9,6 +9,7 @@ services:
      - PASSWD='sha1:030d13fe8056:7e11a5646398161a1d2f70500bb0ed3a11d96c55'
     volumes:
      - "../notebooks/:/srv/notebooks/"
+     - "../data/:/srv/data/"
     #stdin_open: true
     #tty: true
 
