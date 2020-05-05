@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 MAINTAINER Alice Adenis "aadenis@dataswati.com"
 
@@ -23,6 +23,8 @@ RUN jupyter notebook --generate-config
 RUN echo "c.NotebookApp.allow_remote_access = True">> /root/.jupyter/jupyter_notebook_config.py
 
 ENTRYPOINT /bin/bash -c 'jupyter notebook --no-browser --allow-root --ip=* --NotebookApp.password="$PASSWD" "$@"'
+
+ENV PYTHONPATH /usr/local/lib/python-dataswati
 
 WORKDIR /srv/
 

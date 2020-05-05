@@ -1,4 +1,5 @@
-version: "2"
+version: "3"
+
 services:
   python:
     build: .
@@ -8,8 +9,7 @@ services:
     environment:
      - PASSWD='sha1:030d13fe8056:7e11a5646398161a1d2f70500bb0ed3a11d96c55'
     volumes:
-     - "../notebooks/:/srv/notebooks/"
-     - "../data/:/srv/data/"
+     - "../:/srv/"
+     - "../python-dataswati:/usr/local/lib/python-dataswati"
     #stdin_open: true
     #tty: true
-
